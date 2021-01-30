@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfAppcoursework.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppcoursework"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="104" Height="47" RenderTransformOrigin="-0.037,0.519" Click="Button_Click"/>
+
+    </Grid>
+</Window>
