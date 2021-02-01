@@ -16,38 +16,37 @@ using System.Windows.Shapes;
 
 namespace localMovieViewingHistory
 {
-    public class Raiting
+    public class travel_packeges
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public string nameR { get; set; }
-        public double raiting { get; set; }
+        public int id_travel_packeges { get; set; }
+        public int id_tours { get; set; }
+        public int id_customers { get; set; }
+
     }
     public class tours
     {
         public int id_tours { get; set; }
         public string title_tours { get; set; }
-        public string start_tours { get; set; }
-        public int duration { get; set; }
-        public string actors { get; set; }
-        public string dateStart { get; set; }
+        public DatePicker start_tours { get; set; }
+        public int quantity { get; set; }
+        public DatePicker end_tours { get; set; }
     }
-    public class genre
+    public class countries
     {
-        public int id { get; set; }
-        public string name { get; set; }
+        public int id_countries { get; set; }
+        public string title { get; set; }
     }
 
-    public class view
+    public class customers
     {
-        public int id { get; set; }
-        public int idTours { get; set; }
-        public int stars { get; set; }
-        public string date { get; set; }
-        public string time { get; set; }
-        public string nameFilmOriginal { get; set; }
-        public string nameFilmRussian { get; set; }
-        public string description { get; set; }
+        public int id_customers { get; set; }
+        public int series_pass { get; set; }
+        public int number_pass { get; set; }
+        public string surname { get; set; }
+        public string name { get; set; }
+        public string middle_name { get; set; }
+        public string date_of_birth { get; set; }
+        
 
     }
 
@@ -67,13 +66,13 @@ namespace localMovieViewingHistory
 
         SqlConnection connect = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=TA;User ID=sa;Pwd=123;");
 
-        List<tours> tourss = new List<tours>();
-        List<genre> genres = new List<genre>();
-        List<view> views = new List<view>();
-        List<Raiting> raitings = new List<Raiting>();
+        List<tours> tour = new List<tours>();
+        List<countries> countrie = new List<countries>();
+        List<customers> customer = new List<customers>();
+        List<travel_packeges> travel_packege = new List<travel_packeges>();
         public void getTours()
         {
-            tourss = new List<tours>();
+            tour = new List<tours>();
             try
             {
                 connect.Open();
@@ -98,7 +97,7 @@ namespace localMovieViewingHistory
                 SqlDataReader toursReader = getTours.ExecuteReader();
                 while (toursReader.Read())
                 {
-                    tours.Add(new tourss
+                    tours.Add(new tour
                     {
                         start_tours = (string)toursReader[1],
                         title_tours = (string)toursReader[2],
@@ -109,7 +108,7 @@ namespace localMovieViewingHistory
 
                 }
                 tourTour.Items.Clear();
-                foreach (tours film in tourss)
+                foreach (tours film in tour)
                 {
                     tourTour.Items.Add(film);
                 }
@@ -125,7 +124,7 @@ namespace localMovieViewingHistory
 
         public void getGenres()
         {
-            genres = new List<genre>();
+            countrie = new List<countries>();
             try
             {
                 connect.Open();
@@ -134,10 +133,10 @@ namespace localMovieViewingHistory
                 SqlDataReader genresReader = getGenres.ExecuteReader();
                 while (genresReader.Read())
                 {
-                    genres.Add(new genre
+                    countrie.Add(new countries
                     {
-                        id = (int)genresReader[0],
-                        name = (string)genresReader[1]
+                        id_countries = (int)genresReader[0],
+                        title = (string)genresReader[1]
                     });
                 }
                
@@ -167,11 +166,11 @@ namespace localMovieViewingHistory
 
         public int getIdGenreFromName(string name)
         {
-            foreach (genre genre in genres)
+            foreach (countries genre in countrie)
             {
-                if (genre.name == name)
+                if (genre.title == name)
                 {
-                    return genre.id;
+                    return genre.id_countries;
                 }
             }
             return -1;
