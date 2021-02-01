@@ -1,0 +1,45 @@
+C:\Users\mrmai\Desktop\Anna\Anna\bin\Debug\Anna.exe.config
+C:\Users\mrmai\Desktop\Anna\Anna\bin\Debug\Anna.exe
+C:\Users\mrmai\Desktop\Anna\Anna\bin\Debug\Anna.pdb
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\Anna.csprojAssemblyReference.cache
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\MainWindow.g.cs
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\App.g.cs
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\Anna_MarkupCompile.cache
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\Anna_MarkupCompile.lref
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\MainWindow.baml
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\Anna.g.resources
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\Anna.Properties.Resources.resources
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\Anna.csproj.GenerateResource.cache
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\Anna.csproj.CoreCompileInputs.cache
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\Anna.exe
+C:\Users\mrmai\Desktop\Anna\Anna\obj\Debug\Anna.pdb
+C:\Users\Анна\Desktop\Anna\Anna\bin\Debug\Anna.exe.config
+C:\Users\Анна\Desktop\Anna\Anna\bin\Debug\Anna.exe
+C:\Users\Анна\Desktop\Anna\Anna\bin\Debug\Anna.pdb
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\Anna.csprojAssemblyReference.cache
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\MainWindow.g.cs
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\App.g.cs
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\Anna_MarkupCompile.cache
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\Anna_MarkupCompile.lref
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\MainWindow.baml
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\Anna.g.resources
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\Anna.Properties.Resources.resources
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\Anna.csproj.GenerateResource.cache
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\Anna.csproj.CoreCompileInputs.cache
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\Anna.exe
+C:\Users\Анна\Desktop\Anna\Anna\obj\Debug\Anna.pdb
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\bin\Debug\Anna.exe.config
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\bin\Debug\Anna.exe
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\bin\Debug\Anna.pdb
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\Anna.csprojAssemblyReference.cache
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\MainWindow.g.cs
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\App.g.cs
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\Anna_MarkupCompile.cache
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\Anna_MarkupCompile.lref
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\MainWindow.baml
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\Anna.g.resources
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\Anna.Properties.Resources.resources
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\Anna.csproj.GenerateResource.cache
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\Anna.csproj.CoreCompileInputs.cache
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\Anna.exe
+C:\Users\Анна\Desktop\Кошолапова Анна 305\Anna\Anna\obj\Debug\Anna.pdb
