@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище libbraryModelContainer" CdmEntityContainer="libbraryEntities">
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="libbraryModel.Authors">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="AuthorsId" ColumnName="AuthorsId" />
+          <ScalarProperty Name="AuthorsName" ColumnName="AuthorsName" />
+          <ScalarProperty Name="AuthorsFirstName" ColumnName="AuthorsFirstName" />
+          <ScalarProperty Name="AuthorsLastName" ColumnName="AuthorsLastName" />
+          <ScalarProperty Name="AuthorsDateOfBirth" ColumnName="AuthorsDateOfBirth" />
+          <ScalarProperty Name="AuthorsDateOfDeath" ColumnName="AuthorsDateOfDeath" />
+          <ScalarProperty Name="AuthorsFloor" ColumnName="AuthorsFloor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="libbraryModel.Books">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="BooksId" ColumnName="BooksId" />
+          <ScalarProperty Name="BooksTitle" ColumnName="BooksTitle" />
+          <ScalarProperty Name="GenresId" ColumnName="GenresId" />
+          <ScalarProperty Name="DateOfWriting" ColumnName="DateOfWriting" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="libbraryModel.Genres">
+        <MappingFragment StoreEntitySet="Genres">
+          <ScalarProperty Name="GenresId" ColumnName="GenresId" />
+          <ScalarProperty Name="GenresTitle" ColumnName="GenresTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="libbraryModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TheTurnoverOfBooks">
+      <EntityTypeMapping TypeName="libbraryModel.TheTurnoverOfBooks">
+        <MappingFragment StoreEntitySet="TheTurnoverOfBooks">
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="UsersId" ColumnName="UsersId" />
+          <ScalarProperty Name="BooksId" ColumnName="BooksId" />
+          <ScalarProperty Name="DateOfIssue" ColumnName="DateOfIssue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="libbraryModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UsersId" ColumnName="UsersId" />
+          <ScalarProperty Name="UsersName" ColumnName="UsersName" />
+          <ScalarProperty Name="UsersFirstName" ColumnName="UsersFirstName" />
+          <ScalarProperty Name="UsersLastName" ColumnName="UsersLastName" />
+          <ScalarProperty Name="UsersDateOfBirth" ColumnName="UsersDateOfBirth" />
+          <ScalarProperty Name="UsersCourse" ColumnName="UsersCourse" />
+          <ScalarProperty Name="UsersGroupId" ColumnName="UsersGroupId" />
+          <ScalarProperty Name="UsersFloor" ColumnName="UsersFloor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="BooksAuthors" TypeName="libbraryModel.BooksAuthors" StoreEntitySet="BooksAuthors">
+      <EndProperty Name="Authors">
+        <ScalarProperty Name="AuthorsId" ColumnName="AuthorsId" />
+      </EndProperty>
+      <EndProperty Name="Books">
+        <ScalarProperty Name="BooksId" ColumnName="BooksId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище libbraryModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище libbraryModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище libbraryModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище libbraryModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="libbraryModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище libbraryModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="libbraryModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище libbraryModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище libbraryModel.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

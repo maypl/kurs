@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище libbraryModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Authors">
+    <Key>
+      <PropertyRef Name="AuthorsId" />
+    </Key>
+    <Property Name="AuthorsId" Type="int" Nullable="false" />
+    <Property Name="AuthorsName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AuthorsFirstName" Type="nvarchar" MaxLength="20" />
+    <Property Name="AuthorsLastName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="AuthorsDateOfBirth" Type="date" Nullable="false" />
+    <Property Name="AuthorsDateOfDeath" Type="date" />
+    <Property Name="AuthorsFloor" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Books">
+    <Key>
+      <PropertyRef Name="BooksId" />
+    </Key>
+    <Property Name="BooksId" Type="int" Nullable="false" />
+    <Property Name="BooksTitle" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="GenresId" Type="int" Nullable="false" />
+    <Property Name="DateOfWriting" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BooksAuthors">
+    <Key>
+      <PropertyRef Name="BooksId" />
+      <PropertyRef Name="AuthorsId" />
+    </Key>
+    <Property Name="BooksId" Type="int" Nullable="false" />
+    <Property Name="AuthorsId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Genres">
+    <Key>
+      <PropertyRef Name="GenresId" />
+    </Key>
+    <Property Name="GenresId" Type="int" Nullable="false" />
+    <Property Name="GenresTitle" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TheTurnoverOfBooks">
+    <Key>
+      <PropertyRef Name="IssueId" />
+    </Key>
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="UsersId" Type="int" Nullable="false" />
+    <Property Name="BooksId" Type="int" Nullable="false" />
+    <Property Name="DateOfIssue" Type="date" Nullable="false" />
+    <Property Name="ReturnDate" Type="date" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UsersId" />
+    </Key>
+    <Property Name="UsersId" Type="int" Nullable="false" />
+    <Property Name="UsersName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="UsersFirstName" Type="nvarchar" MaxLength="20" />
+    <Property Name="UsersLastName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="UsersDateOfBirth" Type="date" Nullable="false" />
+    <Property Name="UsersCourse" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="UsersGroupId" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="UsersFloor" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FkAuthorsId">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="1" />
+    <End Role="BooksAuthors" Type="Self.BooksAuthors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="AuthorsId" />
+      </Principal>
+      <Dependent Role="BooksAuthors">
+        <PropertyRef Name="AuthorsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FkBooksId">
+    <End Role="Books" Type="Self.Books" Multiplicity="1" />
+    <End Role="BooksAuthors" Type="Self.BooksAuthors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BooksId" />
+      </Principal>
+      <Dependent Role="BooksAuthors">
+        <PropertyRef Name="BooksId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FkBooksId1">
+    <End Role="Books" Type="Self.Books" Multiplicity="1" />
+    <End Role="TheTurnoverOfBooks" Type="Self.TheTurnoverOfBooks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BooksId" />
+      </Principal>
+      <Dependent Role="TheTurnoverOfBooks">
+        <PropertyRef Name="BooksId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FkGenresId">
+    <End Role="Genres" Type="Self.Genres" Multiplicity="1" />
+    <End Role="Books" Type="Self.Books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genres">
+        <PropertyRef Name="GenresId" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="GenresId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FkUsersId">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="TheTurnoverOfBooks" Type="Self.TheTurnoverOfBooks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UsersId" />
+      </Principal>
+      <Dependent Role="TheTurnoverOfBooks">
+        <PropertyRef Name="UsersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище libbraryModelContainer">
+    <EntitySet Name="Authors" EntityType="Self.Authors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Books" EntityType="Self.Books" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BooksAuthors" EntityType="Self.BooksAuthors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Genres" EntityType="Self.Genres" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TheTurnoverOfBooks" EntityType="Self.TheTurnoverOfBooks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FkAuthorsId" Association="Self.FkAuthorsId">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="BooksAuthors" EntitySet="BooksAuthors" />
+    </AssociationSet>
+    <AssociationSet Name="FkBooksId" Association="Self.FkBooksId">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="BooksAuthors" EntitySet="BooksAuthors" />
+    </AssociationSet>
+    <AssociationSet Name="FkBooksId1" Association="Self.FkBooksId1">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="TheTurnoverOfBooks" EntitySet="TheTurnoverOfBooks" />
+    </AssociationSet>
+    <AssociationSet Name="FkGenresId" Association="Self.FkGenresId">
+      <End Role="Genres" EntitySet="Genres" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FkUsersId" Association="Self.FkUsersId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TheTurnoverOfBooks" EntitySet="TheTurnoverOfBooks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
