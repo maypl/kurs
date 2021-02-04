@@ -1,0 +1,30 @@
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\bin\Debug\Pavilions.exe.config
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\bin\Debug\Pavilions.exe
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\bin\Debug\Pavilions.pdb
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\Pavilions.csprojAssemblyReference.cache
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\MainWindow.g.cs
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\App.g.cs
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\Pavilions_MarkupCompile.cache
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\Pavilions_MarkupCompile.lref
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\MainWindow.baml
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\Pavilions.g.resources
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\Pavilions.Properties.Resources.resources
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\Pavilions.csproj.GenerateResource.cache
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\Pavilions.csproj.CoreCompileInputs.cache
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\Pavilions.exe
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\Pavilions\Pavilions\obj\Debug\Pavilions.pdb
+C:\Users\Анна\Desktop\Pavilions\Pavilions\bin\Debug\Pavilions.exe.config
+C:\Users\Анна\Desktop\Pavilions\Pavilions\bin\Debug\Pavilions.exe
+C:\Users\Анна\Desktop\Pavilions\Pavilions\bin\Debug\Pavilions.pdb
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\Pavilions.csprojAssemblyReference.cache
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\MainWindow.g.cs
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\App.g.cs
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\Pavilions_MarkupCompile.cache
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\Pavilions_MarkupCompile.lref
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\MainWindow.baml
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\Pavilions.g.resources
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\Pavilions.Properties.Resources.resources
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\Pavilions.csproj.GenerateResource.cache
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\Pavilions.csproj.CoreCompileInputs.cache
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\Pavilions.exe
+C:\Users\Анна\Desktop\Pavilions\Pavilions\obj\Debug\Pavilions.pdb
