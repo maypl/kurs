@@ -1,0 +1,26 @@
+﻿<Page x:Class="LP.RegistrationForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LP"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistrationForm">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" FontSize="42" Margin="258,0,0,0" TextWrapping="Wrap" Text="Регистрация" VerticalAlignment="Top" Height="68" Width="258"/>
+        <TextBlock HorizontalAlignment="Left" Margin="258,68,0,0" TextWrapping="Wrap" Text="Логин:" FontSize="24" VerticalAlignment="Top" Height="37" Width="111"/>
+        <TextBlock HorizontalAlignment="Left" Margin="258,110,0,0" TextWrapping="Wrap" Text="Пароль:" FontSize="24" VerticalAlignment="Top" Height="37"/>
+        <TextBox x:Name="Login" HorizontalAlignment="Left" Height="37" Margin="374,68,0,0" TextWrapping="Wrap" FontSize="24" Text="" VerticalAlignment="Top" Width="244"/>
+        <TextBox x:Name="Password" HorizontalAlignment="Left" Height="37" Margin="374,110,0,0" TextWrapping="Wrap" FontSize="24" Text="" VerticalAlignment="Top" Width="244"/>
+        <Button Content="done" HorizontalAlignment="Left" Margin="374,278,0,0" FontSize="24" VerticalAlignment="Top" Width="121" Height="42" Click="Button_Click"/>
+        <TextBox x:Name="UserNam" HorizontalAlignment="Left" Height="37" Margin="374,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <TextBox x:Name="UserTwoNam" HorizontalAlignment="Left" Height="37" Margin="374,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <TextBox x:Name="UserThreeName" HorizontalAlignment="Left" Height="37" Margin="374,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <TextBlock FontSize="24" HorizontalAlignment="Left" Margin="258,152,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="87" Height="37"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="258,194,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="87" Height="37"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="258,236,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="87" Height="37"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,63 @@
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\bin\Debug\LP.exe.config
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\bin\Debug\LP.exe
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\bin\Debug\LP.pdb
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\LP.csprojAssemblyReference.cache
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\MainWindow.baml
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\MainWindow.g.cs
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\App.g.cs
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\LP_MarkupCompile.cache
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\LP.g.resources
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\LP.Properties.Resources.resources
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\LP.csproj.GenerateResource.cache
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\LP.csproj.CoreCompileInputs.cache
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\LP.exe
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\LP.pdb
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\RegistrationForm.g.cs
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\LP_MarkupCompile.lref
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\RegistrationForm.baml
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\Login.g.cs
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\Login.baml
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\page people.g.cs
+C:\Users\mrmai\OneDrive\Рабочий стол\ЯПы\C#\LP\LP\obj\Debug\page people.baml
+C:\Users\Анна\Desktop\LP\LP\bin\Debug\LP.exe.config
+C:\Users\Анна\Desktop\LP\LP\bin\Debug\LP.exe
+C:\Users\Анна\Desktop\LP\LP\bin\Debug\LP.pdb
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\LP.csprojAssemblyReference.cache
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\MainWindow.baml
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\Login.g.cs
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\MainWindow.g.cs
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\page people.g.cs
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\RegistrationForm.g.cs
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\App.g.cs
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\LP_MarkupCompile.cache
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\LP_MarkupCompile.lref
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\Login.baml
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\page people.baml
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\RegistrationForm.baml
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\LP.g.resources
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\LP.Properties.Resources.resources
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\LP.csproj.GenerateResource.cache
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\LP.csproj.CoreCompileInputs.cache
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\LP.exe
+C:\Users\Анна\Desktop\LP\LP\obj\Debug\LP.pdb
+C:\Users\Анна\Desktop\Mebel\LP\bin\Debug\LP.exe.config
+C:\Users\Анна\Desktop\Mebel\LP\bin\Debug\LP.exe
+C:\Users\Анна\Desktop\Mebel\LP\bin\Debug\LP.pdb
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\LP.csprojAssemblyReference.cache
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\MainWindow.baml
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\Login.g.cs
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\MainWindow.g.cs
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\page people.g.cs
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\RegistrationForm.g.cs
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\App.g.cs
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\LP_MarkupCompile.cache
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\LP_MarkupCompile.lref
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\Login.baml
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\page people.baml
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\RegistrationForm.baml
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\LP.g.resources
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\LP.Properties.Resources.resources
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\LP.csproj.GenerateResource.cache
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\LP.csproj.CoreCompileInputs.cache
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\LP.exe
+C:\Users\Анна\Desktop\Mebel\LP\obj\Debug\LP.pdb
